@@ -1,0 +1,199 @@
+/*BODY*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ebebeb;
+    font-family: 'Roboto';
+    margin: 0px;
+    padding: 0px;
+}
+
+/*HEADER*/
+
+header{
+    width: 100vw;
+    background-color: #EAC926;
+}
+
+header .imagen-logo{
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.input-header{
+    width: 50%;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+div.search-icon i{
+    margin-top: 1px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    background-color: #ebebeb;;
+    padding: 1px;
+    border-color: #666;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.compra-cuotas{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+ul.opciones-header{
+    list-style-type: none;
+    padding-left: 0%;
+    font-size: 12px;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.burguer-menu i{
+    background-color: #1259c3;
+    color: #ebebeb;
+    padding: 11px;
+    margin-left: 45%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+.banner{
+    width: 100vw;
+}   
+
+/*MAIN*/
+
+main{
+    width: 90%;
+    margin: auto;
+}
+
+h3.titulares{
+    font-size: 24px;
+    color: #666;
+}
+
+main article{
+    width: 100%;
+    margin-bottom: 10px;  
+}
+
+main div.detalle-producto{
+    border: solid 1px #ebebeb;
+    background-color: white;
+    padding: 15px;
+}
+
+main div.truck-icon{
+    color: green;
+    font-size: 18px;
+    border: solid green 0.5px;
+    padding: 1px 15px 15px 1px;
+    margin-right: 60vw; /*como lograr que el borde no se mueva?*/
+    border-radius: 100%;
+}
+
+img.img-producto{
+    width: 100%;
+}
+
+p.precios{
+    font-size: 18px;
+    margin-bottom: 0%;
+}
+
+p.descuentos{
+    font-size: 16px;
+    color: green;
+    margin: 0%;
+}
+
+p.descripcion{
+    font-size: 16px;
+    color: #666;
+}
+
+/*FOOTER*/
+
+footer{
+    margin: 5px;
+    background-color: white;
+    color: #666;
+}
+
+section.footer-options{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.footer-icon{
+    color: #1259c3;
+    font-size: 24px;
+    padding-bottom: 0%;
+    padding-top: 30px;
+}
+
+section.footer-options h3{
+    font-size: 18px;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    
+}
+
+section.footer-options p{
+    font-size: 12px;
+    margin-top: 0%;
+}
+
+footer .copyrigth{
+    font-size: 12px;
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+/*navegación en mobile*/
+@media (max-width: 361px){
+    p.descripcion{
+        font-size: 0px;
+    }
+
+    ul.opciones-header{
+        font-size: 0px;
+    }
+}
+
+/*navegación en tablet*/
+
+@media (min-width: 361px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }  
+
+    .burguer-menu i{
+        background-color: transparent;
+        font-size: 0px;
+    }
+}
+
+/*navegación en desktop*/
+@media (min-width: 769px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+}
