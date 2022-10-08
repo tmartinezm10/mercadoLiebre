@@ -1,4 +1,28 @@
-/*BODY*/
+/*
+Paleta de colores:
+
+    Amarillo: #EAC926;
+    Azul: #03264C;
+    Celeste: #1259c3;
+    Gris oscuro: #666;
+    Gris claro: #ebebeb;
+    Verde: #39b54a;
+
+Tipografías:
+
+    Familia: 'Roboto'
+
+Tamaños Tipográficos:
+
+    Cuerpos de texto: 12px
+    Headlines (Basado en tu última visita/Ofertas): 24px
+    Precios: 18px
+    Descuentos: 16px
+    Descripciones: 16px
+*/
+
+/*******************************************************************BODY*******************************************************************/
+
 
 * {
     box-sizing: border-box;
@@ -11,14 +35,14 @@ body {
     font-family: 'Roboto';
 }
 
-/*HEADER*/
+/*******************************************************************HEADER*******************************************************************/
 
 header {
     width: 100vw;
     background-color: #EAC926;
 }
 
-.main-header {
+.MainHeader {
     display: flex;
     padding: 20px;
     flex-wrap: wrap;
@@ -26,29 +50,40 @@ header {
     position: relative;
 }
 
-.logo-buscar {
+/*LOGO Y BARRA DE BÚSQUEDA*/
+
+.SearchLogoContainer {
     display: flex;
-    flex-wrap: wrap;
-    column-gap: 10px;
+    column-gap: 5px;
 }
 
-img.logo {
-    width: 40%;
-    flex-grow: 0.5;
+a.HomeLogo{
+    width: 50%;
+    align-self: center;
 }
 
-.barra-y-boton-buscar {
-    width: fit-content;
+img.Logo{
+    width: 100%;
+    align-items: center;
+}
+
+.SearchBar{
     display: flex;
     flex-wrap: wrap;
     background-color: #fff;
     border-radius: 5px;
     justify-content: center;
-    flex-grow: 0.5;
+    width: 50%;
 }
 
-.input-header {
-    width: auto;
+.SearchButton{
+    border-radius: inherit;
+    border-style: none;
+    background-color: #fff;
+}
+
+.InputSearchBar {
+    width: 85%;
     background-color: #fff;
     font-size: 12px;
     border: none;
@@ -64,36 +99,34 @@ div i.fa-magnifying-glass {
     align-self: center;
 }
 
-p.compra-cuotas {
+p.PaymentPlan {
     text-align: center;
     margin: 20px;
     font-size: 12px;
 }
 
-/*opciones del menú*/
-
-.main-navbar {
+.MainNavbar {
     display: flex;
     justify-content: space-between;
     padding: 15px;
 }
 
-.main-navbar ul {
+.MainNavbar ul {
     list-style: none;
     padding: 0px;
     margin: 0px;
 }
 
-ul.navbar-1 {
+ul.Navbar1{
     display: flex;
 
 }
 
-ul.navbar-2 {
+ul.Navbar2 {
     display: flex;
 }
 
-.main-navbar a {
+.MainNavbar a {
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -101,7 +134,7 @@ ul.navbar-2 {
     font-size: 12px;
 }
 
-.burguer-menu {
+.BurgerMenu {
     background-color: #1259c3;
     color: #ebebeb;
     display: flex;
@@ -116,18 +149,18 @@ ul.navbar-2 {
     bottom: 20px;
 }
 
-.banner {
+.Banner {
     width: 100vw;
 }
 
-/*MAIN*/
+/*******************************************************************MAIN*******************************************************************/
 
 main {
     width: 90%;
     margin: auto;
 }
 
-h3.titulares {
+h3.Headlines {
     font-size: 24px;
     font-weight: 900;
     color: #666;
@@ -139,7 +172,7 @@ main article {
     background-color: #fff;
 }
 
-img.img-producto {
+img.ProductImg {
     width: 100%;
 }
 
@@ -158,41 +191,48 @@ article div i {
     top: -15px;
 }
 
-main div.detalle-producto {
+article div i.fa-truck:hover {
+    background-color: transparent;
+    outline: 2px dashed;
+    transform: rotate(-90deg);
+    transition-duration: 0.8s;
+}
+
+main div.ProductDetail {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
-    border: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
     position: relative;
     padding: 15px;
 }
 
-.precio-descuentos {
+div.PriceContainer {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-
+    border-style: none;
 }
 
-p.precios {
-    font-size: 16px;
-    font-weight: 800;
+p.Price {
+    font-size: 18px;
     flex-grow: 0.3;
 }
 
-p.descuentos {
+p.Sale {
     font-size: 16px;
     color: #39b54a;
     flex-grow: 0.7;
 }
 
-p.descripcion {
+p.Description {
     font-size: 16px;
     color: #666;
+    display: none;
 }
 
-/*FOOTER*/
+/*******************************************************************FOOTER*******************************************************************/
 
 footer {
     margin: 5px;
@@ -200,56 +240,160 @@ footer {
     color: #666;
 }
 
-section.footer-options {
+section.FooterContainer {
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding: 20px 50px;
 }
 
-.footer-icon {
+.FooterIcon {
     color: #1259c3;
     font-size: 24px;
     padding-bottom: 0%;
     padding-top: 30px;
 }
 
-section.footer-options h3 {
+.FooterIcon:hover{
+    color: #39b54a;
+}
+
+section.FooterContainer h3 {
     font-size: 18px;
     margin-top: 0%;
     margin-bottom: 0%;
 
 }
 
-section.footer-options p {
+section.FooterContainer p {
     font-size: 12px;
     margin-top: 0%;
 }
 
-footer .copyrigth {
+footer p.Copyright {
     font-size: 12px;
     text-align: left;
     padding-bottom: 10px;
     padding-left: 10px;
 }
 
+/*******************************************************************FORMULARIOS*******************************************************************/
+
+.CreateProductForm{
+    padding: 20px 15px;
+}
+
+.LoginForm{
+    padding: 20px 15px;
+}
+
+.FormInput{
+    margin-bottom: 15px;
+}
+
+.FormInput label{
+    margin-bottom: 5px;
+    font-weight: 800;
+    display: block;
+}
+
+.UploadProfilePicture{
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.InputControl{
+    width: 100%;
+    padding: 8px 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+.SubmitBotton,
+.ResetBotton{
+    width: 100%;
+    background-color: #1259c3;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 3px;
+}
+
+.SubmitBotton:hover{
+    background-color: #0022AA;
+}
+
+.ResetBotton:hover{
+    background-color: #666;
+}
+
+label.UserProfile{
+    font-weight: 500;
+    font-size: 12px;
+    align-items: center;
+    margin: 0px;
+}
+
+.UserProfileContainer{
+    display: flex;
+    margin-left: 15px;
+}
+
+div.UserProfile{
+    display: flex;
+    column-gap: 20px;
+    margin-right: 20PX;
+    padding: 5px;
+}
+
+.CheckboxContainer{
+    margin-bottom: 15px;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+input.Interests{
+    width: auto;
+
+}
+
+label.Interests{
+    font-weight: 500;
+    font-size: 12px;
+    margin: 0px;
+}
+
+div.InterestsCheck{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 20px;
+}
+
+.UploadProfilePicture{
+    margin-top: 5px;
+}
+
+/*******************************************************************MEDIA QUERY*******************************************************************/
+
 /*navegación en mobile*/
 @media (max-width: 360px) {
 
-    p.descripcion {
+   
+
+    header nav.MainNavbar ul {
         display: none;
     }
 
-    header nav.main-navbar ul {
-        display: none;
+    .ArticleContainer {
+        background-color: #ebebeb;
     }
 
-    article.art-2,
-    article.art-3,
-    article.art-4 {
-        display: none;
+    article.Product{
+        margin-bottom: 10px;
     }
+
 }
 
 /*navegación en tablet*/
@@ -257,144 +401,124 @@ footer .copyrigth {
 
 @media (max-width: 768px) and (min-width: 361px) {
 
-    .main-header {
+    .MainHeader {
         display: flex;
         flex-wrap: nowrap;
         justify-content: center;
-        width: vw;
-    }
-
-    .logo-buscar {
-        flex-wrap: nowrap;
-        justify-content: center;
-        gap: 0px;
-        flex-grow: 0.66;
-    }
-
-    .input-header {
-        width: 85%;
-        border-radius: 0%;
-        border-style: groove;
-    }
-
-    .barra-y-boton-buscar {
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-self: center;
-        background-color: transparent;
         column-gap: 5px;
     }
 
-    div i.fa-magnifying-glass {
-        background-color: #ebebeb;
-        border: solid 1px #666;
-        padding: 1px;
-        font-size: 14px;
+    .SearchLogoContainer {
+        flex-wrap: nowrap;
+        justify-content: center;
+        column-gap: 5px;
     }
 
-    p.compra-cuotas {
+    .InputSearchBar {
+        width: 85%;
+    }
+
+    p.PaymentPlan {
         text-align: center;
         margin: auto;
         font-size: 80%;
     }
 
-    .contenedor-de-articulos {
+    .ArticleContainer {
         display: flex;
-        column-gap: 40px;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
         background-color: #ebebeb;
+        justify-content: space-around;
     }
 
-    .burguer-menu {
+    .BurgerMenu {
         display: none;
     }
 
-    main section article.art-1,
-    main section article.art-2 {
+    article.Product{
+        width: 48%;
+    }
+
+    article.Product:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 48%;
     }
 
-    article.art-3,
-    article.art-4 {
-        display: none;
+    div.ProductDetail:hover p.Description{
+        display: block;
     }
 }
 
+   
+
 /*navegación en desktop*/
+
 @media (min-width: 769px) {
-    .main-header {
+    .MainHeader {
         display: flex;
         flex-wrap: nowrap;
-        justify-content: center;
-        width: vw;
+        justify-content: space-between;
+        column-gap: 15px;
     }
 
-    .logo-buscar {
+    .SearchLogoContainer {
         flex-wrap: nowrap;
         justify-content: center;
-        gap: 0px;
-        flex-grow: 0.66;
+        column-gap: 15px;
     }
 
-    .input-header {
+    .InputSearchBar {
         width: 85%;
         border-radius: 0%;
-        border-style: groove;
     }
 
-    .barra-y-boton-buscar {
-        flex-wrap: nowrap;
-        justify-content: center;
-        align-self: center;
-        background-color: transparent;
-        column-gap: 5px;
-    }
-
-    div i.fa-magnifying-glass {
-        background-color: #ebebeb;
-        border: solid 1px #666;
-        padding: 1px;
-        font-size: 14px;
-    }
-
-    p.compra-cuotas {
-        text-align: center;
-        margin: auto;
-        font-size: 16px;
-    }
-
-    nav.main-navbar {
+    nav.MainNavbar {
         padding: 20px 40px;
-        ;
     }
 
-    nav.main-navbar a {
-        font-size: 16px;
-    }
-
-    ul.navbar-1 {
+    ul.Navbar1{
         column-gap: 20px;
     }
 
-    ul.navbar-2 {
+    ul.Navbar2 {
         column-gap: 20px;
     }
 
-    .contenedor-de-articulos {
+    .ArticleContainer {
         display: flex;
-        column-gap: 40px;
+        column-gap: 10px;
         background-color: #ebebeb;
     }
 
-    .burguer-menu {
+    .BurgerMenu {
         display: none;
     }
 
-    main section article.art-1,
-    main section article.art-2,
-    main section article.art-3,
-    main section article.art-4 {
+    article.Product:hover{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-
     }
 
+    div.ProductDetail:hover p.Description{
+        display: block;
+    }
+
+    .FooterContainer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.FooterOptions{
+        width: 33.3%;
+    }
+
+    div.FooterContainer p{
+        padding: 0px 20px;
+    } 
+    
+    .CreateProductForm,
+    .LoginForm{
+        padding: 20px 20%;
+    }
 }
